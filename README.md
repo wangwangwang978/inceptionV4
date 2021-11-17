@@ -1,3 +1,5 @@
+# 基于MindSpore AI框架实现零售商品识别
+
 # 第一步 导入代码和测试集（如下为文件结构）
 ![image](https://user-images.githubusercontent.com/67614464/142162066-251dced8-4b1c-44e2-bdd7-c1c9572b04e5.png)
 
