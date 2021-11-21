@@ -1,0 +1,182 @@
+{'enable_modelarts': 'Whether training on modelarts, default: False', 'data_url': 'Dataset url for obs', 'train_url': 'Training output url for obs', 'data_path': 'Dataset path for local', 'output_path': 'Training output path for local', 'device_target': 'Target device type', 'enable_profiling': 'Whether enable profiling while training, default: False', 'file_name': 'output file name.', 'file_format': 'file format', 'resume': 'resume training with existed checkpoint', 'result_path': 'result file path', 'label_file': 'label file'}
+{'amp_level': 'O3',
+ 'batch_size': 360,
+ 'checkpoint_path': './inceptionv4/inceptionv4-train-250_1251.ckpt',
+ 'checkpoint_url': '',
+ 'ckpt_file': '/cache/data/ImageNet_Original/inceptionv4/inceptionv4-train-250_1251.ckpt',
+ 'ckpt_path': '/cache/data/',
+ 'ckpt_save_dir': './ckpt/',
+ 'config_path': 'default_config.yaml',
+ 'data_path': '/cache/data',
+ 'data_url': '',
+ 'dataset_path': 'data',
+ 'decay': 0.9,
+ 'device_id': 0,
+ 'device_target': 'Ascend',
+ 'ds_sink_mode': True,
+ 'ds_type': 'imagenet',
+ 'enable_modelarts': False,
+ 'enable_profiling': False,
+ 'epoch_size': 60,
+ 'epsilon': 1.0,
+ 'file_format': 'MINDIR',
+ 'file_name': 'inceptionv4',
+ 'height': 299,
+ 'is_distributed': False,
+ 'is_save_on_master': False,
+ 'keep_checkpoint_max': 5,
+ 'label_file': '',
+ 'load_path': '/cache/checkpoint_path',
+ 'loss_scale': 1024,
+ 'lr_end': 4e-06,
+ 'lr_init': 4e-05,
+ 'lr_max': 0.4,
+ 'modelarts_dataset_unzip_name': '',
+ 'momentum': 0.9,
+ 'need_modelarts_dataset_unzip': False,
+ 'num_classes': 2388,
+ 'output_path': '/cache/train',
+ 'platform': 'Ascend',
+ 'result_path': '',
+ 'resume': '',
+ 'save_checkpoint_epochs': 5,
+ 'smooth_factor': 0.1,
+ 'start_epoch': 1,
+ 'train_url': '',
+ 'warmup_epochs': 1,
+ 'weight_decay': 4e-05,
+ 'width': 299,
+ 'work_nums': 16}
+Please check the above information for the configurations
+epoch_size: 60 batch_size: 360 class_num 2388
+----reading dataset -----
+first dataset size: 671251
+second dataset size: 671251
+third dataset size: 671251
+final dataset size: 1864
+----finished dataset -----
+[2.5457083e-04 4.6914164e-04 6.8371242e-04 ... 4.0007344e-06 4.0003265e-06
+ 4.0000814e-06]
+1864
+epoch: 1 step: 1864, loss is 4.133254
+epoch time: 1557504.458 ms, per step time: 835.571 ms
+epoch: 2 step: 1864, loss is 2.5621524
+epoch time: 1201677.492 ms, per step time: 644.677 ms
+epoch: 3 step: 1864, loss is 2.092897
+epoch time: 1201734.710 ms, per step time: 644.707 ms
+epoch: 4 step: 1864, loss is 1.7766415
+epoch time: 1201756.843 ms, per step time: 644.719 ms
+epoch: 5 step: 1864, loss is 1.6697977
+epoch time: 1205140.057 ms, per step time: 646.534 ms
+epoch: 6 step: 1864, loss is 1.5989516
+epoch time: 1201719.239 ms, per step time: 644.699 ms
+epoch: 7 step: 1864, loss is 1.6637774
+epoch time: 1201792.865 ms, per step time: 644.739 ms
+epoch: 8 step: 1864, loss is 1.2153625
+epoch time: 1201772.206 ms, per step time: 644.728 ms
+epoch: 9 step: 1864, loss is 1.363234
+epoch time: 1201830.931 ms, per step time: 644.759 ms
+epoch: 10 step: 1864, loss is 1.3949208
+epoch time: 1205333.438 ms, per step time: 646.638 ms
+epoch: 11 step: 1864, loss is 1.2645988
+epoch time: 1201884.495 ms, per step time: 644.788 ms
+epoch: 12 step: 1864, loss is 1.3753228
+epoch time: 1201928.705 ms, per step time: 644.812 ms
+epoch: 13 step: 1864, loss is 1.276453
+epoch time: 1201838.503 ms, per step time: 644.763 ms
+epoch: 14 step: 1864, loss is 1.2944622
+epoch time: 1201849.818 ms, per step time: 644.769 ms
+epoch: 15 step: 1864, loss is 1.1930845
+epoch time: 1204840.254 ms, per step time: 646.374 ms
+epoch: 16 step: 1864, loss is 1.2712831
+epoch time: 1201917.369 ms, per step time: 644.805 ms
+epoch: 17 step: 1864, loss is 1.019061
+epoch time: 1201945.860 ms, per step time: 644.821 ms
+epoch: 18 step: 1864, loss is 1.0307708
+epoch time: 1201817.411 ms, per step time: 644.752 ms
+epoch: 19 step: 1864, loss is 1.1358795
+epoch time: 1201742.891 ms, per step time: 644.712 ms
+epoch: 20 step: 1864, loss is 1.1748261
+epoch time: 1204559.624 ms, per step time: 646.223 ms
+epoch: 21 step: 1864, loss is 1.1229761
+epoch time: 1201827.822 ms, per step time: 644.757 ms
+epoch: 22 step: 1864, loss is 1.0567014
+epoch time: 1201802.984 ms, per step time: 644.744 ms
+epoch: 23 step: 1864, loss is 1.035627
+epoch time: 1201773.720 ms, per step time: 644.728 ms
+epoch: 24 step: 1864, loss is 0.97262084
+epoch time: 1201772.152 ms, per step time: 644.728 ms
+epoch: 25 step: 1864, loss is 0.932963
+epoch time: 1204520.916 ms, per step time: 646.202 ms
+epoch: 26 step: 1864, loss is 0.84388494
+epoch time: 1201797.848 ms, per step time: 644.741 ms
+epoch: 27 step: 1864, loss is 0.88807654
+epoch time: 1201806.854 ms, per step time: 644.746 ms
+epoch: 28 step: 1864, loss is 0.9394736
+epoch time: 1201836.815 ms, per step time: 644.762 ms
+epoch: 29 step: 1864, loss is 0.8833166
+epoch time: 1201851.724 ms, per step time: 644.770 ms
+epoch: 30 step: 1864, loss is 0.9014426
+epoch time: 1204765.850 ms, per step time: 646.334 ms
+epoch: 31 step: 1864, loss is 0.9087506
+epoch time: 1201901.125 ms, per step time: 644.797 ms
+epoch: 32 step: 1864, loss is 0.7712503
+epoch time: 1201857.472 ms, per step time: 644.773 ms
+epoch: 33 step: 1864, loss is 0.7434232
+epoch time: 1201822.016 ms, per step time: 644.754 ms
+epoch: 34 step: 1864, loss is 0.761974
+epoch time: 1201834.532 ms, per step time: 644.761 ms
+epoch: 35 step: 1864, loss is 0.71097326
+epoch time: 1204637.718 ms, per step time: 646.265 ms
+epoch: 36 step: 1864, loss is 0.71649957
+epoch time: 1201820.281 ms, per step time: 644.753 ms
+epoch: 37 step: 1864, loss is 0.6490459
+epoch time: 1201851.459 ms, per step time: 644.770 ms
+epoch: 38 step: 1864, loss is 0.7896051
+epoch time: 1201814.420 ms, per step time: 644.750 ms
+epoch: 39 step: 1864, loss is 0.68324983
+epoch time: 1201819.366 ms, per step time: 644.753 ms
+epoch: 40 step: 1864, loss is 0.60702395
+epoch time: 1204878.390 ms, per step time: 646.394 ms
+epoch: 41 step: 1864, loss is 0.5423866
+epoch time: 1201840.021 ms, per step time: 644.764 ms
+epoch: 42 step: 1864, loss is 0.71042544
+epoch time: 1201850.476 ms, per step time: 644.770 ms
+epoch: 43 step: 1864, loss is 0.4432328
+epoch time: 1201895.649 ms, per step time: 644.794 ms
+epoch: 44 step: 1864, loss is 0.584704
+epoch time: 1201862.414 ms, per step time: 644.776 ms
+epoch: 45 step: 1864, loss is 0.43653223
+epoch time: 1204915.377 ms, per step time: 646.414 ms
+epoch: 46 step: 1864, loss is 0.50232905
+epoch time: 1201917.726 ms, per step time: 644.806 ms
+epoch: 47 step: 1864, loss is 0.36648372
+epoch time: 1201930.901 ms, per step time: 644.813 ms
+epoch: 48 step: 1864, loss is 0.44316196
+epoch time: 1201893.178 ms, per step time: 644.792 ms
+epoch: 49 step: 1864, loss is 0.3892163
+epoch time: 1201876.748 ms, per step time: 644.784 ms
+epoch: 50 step: 1864, loss is 0.35712284
+epoch time: 1204808.636 ms, per step time: 646.357 ms
+epoch: 51 step: 1864, loss is 0.40156156
+epoch time: 1201945.275 ms, per step time: 644.820 ms
+epoch: 52 step: 1864, loss is 0.41475397
+epoch time: 1201936.426 ms, per step time: 644.816 ms
+epoch: 53 step: 1864, loss is 0.3210333
+epoch time: 1201955.350 ms, per step time: 644.826 ms
+epoch: 54 step: 1864, loss is 0.27007377
+epoch time: 1201969.575 ms, per step time: 644.833 ms
+epoch: 55 step: 1864, loss is 0.34341663
+epoch time: 1204713.977 ms, per step time: 646.306 ms
+epoch: 56 step: 1864, loss is 0.29297712
+epoch time: 1202005.858 ms, per step time: 644.853 ms
+epoch: 57 step: 1864, loss is 0.32885912
+epoch time: 1201954.096 ms, per step time: 644.825 ms
+epoch: 58 step: 1864, loss is 0.2377796
+epoch time: 1201938.457 ms, per step time: 644.817 ms
+epoch: 59 step: 1864, loss is 0.17250594
+epoch time: 1201984.383 ms, per step time: 644.841 ms
+epoch: 60 step: 1864, loss is 0.30270094
+epoch time: 1204963.089 ms, per step time: 646.439 ms
+Inceptionv4 training success!
+

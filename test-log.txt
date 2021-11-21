@@ -1,0 +1,59 @@
+{'enable_modelarts': 'Whether training on modelarts, default: False', 'data_url': 'Dataset url for obs', 'train_url': 'Training output url for obs', 'data_path': 'Dataset path for local', 'output_path': 'Training output path for local', 'device_target': 'Target device type', 'enable_profiling': 'Whether enable profiling while training, default: False', 'file_name': 'output file name.', 'file_format': 'file format', 'resume': 'resume training with existed checkpoint', 'result_path': 'result file path', 'label_file': 'label file'}
+{'amp_level': 'O3',
+ 'batch_size': 360,
+ 'checkpoint_path': 'ckpts_rank_0/inceptionV4-train-rank0-60_1864.ckpt',
+ 'checkpoint_url': '',
+ 'ckpt_file': '/cache/data/ImageNet_Original/inceptionv4/inceptionv4-train-250_1251.ckpt',
+ 'ckpt_path': '/cache/data/',
+ 'ckpt_save_dir': './ckpt/',
+ 'config_path': 'default_config.yaml',
+ 'data_path': '/cache/data',
+ 'data_url': '',
+ 'dataset_path': 'data',
+ 'decay': 0.9,
+ 'device_id': 0,
+ 'device_target': 'Ascend',
+ 'ds_sink_mode': True,
+ 'ds_type': 'imagenet',
+ 'enable_modelarts': False,
+ 'enable_profiling': False,
+ 'epoch_size': 60,
+ 'epsilon': 1.0,
+ 'file_format': 'MINDIR',
+ 'file_name': 'inceptionv4',
+ 'height': 299,
+ 'is_distributed': False,
+ 'is_save_on_master': False,
+ 'keep_checkpoint_max': 5,
+ 'label_file': '',
+ 'load_path': '/cache/checkpoint_path',
+ 'loss_scale': 1024,
+ 'lr_end': 4e-06,
+ 'lr_init': 4e-05,
+ 'lr_max': 0.4,
+ 'modelarts_dataset_unzip_name': '',
+ 'momentum': 0.9,
+ 'need_modelarts_dataset_unzip': False,
+ 'num_classes': 2388,
+ 'output_path': '/cache/train',
+ 'platform': 'Ascend',
+ 'result_path': '',
+ 'resume': '',
+ 'save_checkpoint_epochs': 5,
+ 'smooth_factor': 0.1,
+ 'start_epoch': 1,
+ 'train_url': '',
+ 'warmup_epochs': 1,
+ 'weight_decay': 4e-05,
+ 'width': 299,
+ 'work_nums': 16}
+Please check the above information for the configurations
+----reading dataset -----
+first dataset size: 39457
+second dataset size: 39457
+third dataset size: 39457
+final dataset size: 109
+----finished dataset -----
+==================== Evalute start ====================
+metric:  {'Loss': 0.17723569022480895, 'Top1-Acc': 0.9562181447502548, 'Top5-Acc': 0.9941896024464831}
+
